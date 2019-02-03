@@ -2,14 +2,14 @@
 """
 Created on Mon Dec 31 15:51:57 2018
 
-@author: Engnr. Erioluwa
+@author: Erioluwa Morenikeji
 """
 
 # -*- coding: utf-8 -*-
 """
 Created on Wed Dec 26 13:08:17 2018
 
-@author: Engnr. Erioluwa
+@author: Erioluwa Morenikeji
 """
 
 #import libraries
@@ -27,13 +27,6 @@ classifier.add(MaxPooling2D(pool_size = (2, 2), strides=2))
 
 classifier.add(Convolution2D(filters = 64, kernel_size = (5 , 5), padding="same", activation = 'relu'))
 classifier.add(MaxPooling2D(pool_size = (3, 3), strides=2))
-
-#classifier.add(Convolution2D(filters = 32, kernel_size = (5 , 5), padding="same", activation = 'relu'))
-#classifier.add(MaxPooling2D(pool_size = (3, 3), strides=2))
-#
-#classifier.add(Convolution2D(filters = 64, kernel_size = (5 , 5), padding="same", activation = 'relu'))
-#classifier.add(MaxPooling2D(pool_size = (3, 3), strides=2))
-
 
 classifier.add(Flatten())
 
